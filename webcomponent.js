@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('test.broadcaster', class WidgetTemplate extends HTMLElement {
+    customElements.define('test-broadcaster', class WidgetTemplate extends HTMLElement {
 
 
 		constructor() {
