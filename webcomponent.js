@@ -1,7 +1,9 @@
 (function () {
   let tmpl = document.createElement("template");
   tmpl.innerHTML = `
-  <div width="100px" height="100px" border="1px" color="black"></div>
+  <div width="100px" height="100px" color="red">
+  <input type="button" value="Button"/>
+  </div>
     `;
 
   customElements.define(
