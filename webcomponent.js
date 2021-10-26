@@ -13,13 +13,14 @@
             this._msg="This is a default msg.";
             this.dom;
             this.addEventListener("dblclick",event => {
-				var event = new CustomEvent("sendMsg",{
-					detail: {
-						properties: {
-							msg: this.msg
-						}
-					}
-			});
+                var event = new Event("onclick");
+				// var event = new CustomEvent("sendMsg",{
+				// 	detail: {
+				// 		properties: {
+				// 			msg: this.msg
+				// 		}
+				// 	}
+			// });
 				this.dispatchEvent(event);
 			});
 		}
